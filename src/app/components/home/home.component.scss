@@ -1,0 +1,27 @@
+.main-div {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 100vh;
+}
+
+.sidebar-div {
+  width: 22%;
+  overflow: auto;
+}
+
+.center-div {
+  width: 62%;
+  background: #E5E5E5;
+}
+
+.center-expanded-div {
+  width: 78%;
+  background: #E5E5E5;
+}
+
+.profile-expanded-div {
+  width: 16%;
+}
+.profile-div{
+  display: none;
+}

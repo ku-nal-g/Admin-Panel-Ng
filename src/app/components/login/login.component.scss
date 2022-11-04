@@ -1,0 +1,89 @@
+.main-div1 {
+  display: flex;
+  min-height: 100vh;
+}
+
+.color-div1 {
+  width: 25%;
+  min-height: 100vh;
+  background-color: rgb(25, 230, 178);
+}
+
+.main-div2 {
+  width: 75%;
+}
+
+.form-div {
+  display: flex;
+  width: 90%;
+  height: 87%;
+  box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  position: absolute;
+  left: 5%;
+}
+
+.form-text {
+  background-color: rgb(25, 230, 178);
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-form {
+  width: 80%;
+  padding: 8%;
+}
+
+.logo-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.logo-text p {
+  font-size: 1.11rem;
+  font-weight: 500;
+  word-wrap: break-word;
+}
+
+label {
+  font-weight: 600;
+}
+
+input {
+  border: none;
+  outline: none;
+  border: 2px solid #ddd;
+  border-radius: 0 !important;
+  padding: 10px;
+}
+
+input:focus {
+  border: none;
+  outline: none;
+  border: 2px solid #ddd;
+  border-radius: 0 !important;
+  padding: 10px;
+  background-color: azure;
+}
+
+button {
+  border: none;
+  outline: none;
+  padding: 10px;
+  background-color: rgb(26, 235, 182);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+button:hover {
+  border: none;
+  outline: none;
+  padding: 10px;
+  background-color: rgb(26, 235, 182);
+  font-weight: 600;
+  cursor: pointer;
+}

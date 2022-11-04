@@ -1,0 +1,30 @@
+span.initial{
+  padding: 10px 15px;
+  border-radius: 50%;
+  background: rgba(203, 212, 242, 1);
+  color: rgba(0, 31, 73, 1);
+}
+.carousel-item h3{
+  color: #222651;
+}
+.carousel-item img{
+ width: 230px;
+ height: 150px;
+}
+.card{
+  background-color: rgba(255,255,255,1);
+  height: 100%;
+}
+.card h6{
+  font-weight: 600;
+}
+.carousel-control-prev-icon{
+  background-color: black !important;
+  position: relative !important;
+  left: -95px !important;
+}
+.carousel-control-next-icon{
+  background-color: black !important;
+  position: relative !important;
+  right: -85px !important;
+}

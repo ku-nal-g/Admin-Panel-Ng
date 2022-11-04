@@ -1,0 +1,11 @@
+<div class="main-div">
+  <div class="sidebar-div">
+    <app-sidebar></app-sidebar>
+  </div>
+  <div [ngClass]="getContentClass()" class="p-2">
+    <app-content></app-content>
+  </div>
+  <div [ngClass]="getProfileClass()">
+    <app-profile></app-profile>
+  </div>
+</div>

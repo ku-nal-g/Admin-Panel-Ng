@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import '~ngx-toastr/toastr';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  word-wrap: break-word;
+}
+.carousel-indicators button {
+  height: 10px !important;
+  width: 10px !important;
+  margin: 0 10px !important;
+  border-radius: 100%;
+  background-color: #1963ac !important;
+  position: relative;
+  top: 50px;
+}
+

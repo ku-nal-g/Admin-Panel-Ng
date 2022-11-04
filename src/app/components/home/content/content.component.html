@@ -1,0 +1,351 @@
+<div class="container-fluid">
+  <div class="row p-3">
+    <div class="col-md-12 text-end">
+      <span class="me-2">{{userName}}</span>
+      <span title="Open profile bar" (click)="toggleDiv()" class="initial me-3"
+        style="font-weight: 600; cursor: pointer;">{{userName[0]}}</span>
+      <span (click)="navigateBack()" title="logout" style="color: #5970BC;
+      "><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+          class="bi bi-box-arrow-right" viewBox="0 0 16 16">
+          <path fill-rule="evenodd"
+            d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0v2z" />
+          <path fill-rule="evenodd"
+            d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z" />
+        </svg></span>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid p-5" style="background-color: white;">
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="row">
+          <div class="col-md-8">
+            <h3>SAP Deployment Automation</h3>
+            <p>Enables automated deployment of SAP Virtual Machines from standalone services to complex architecture
+              blueprints with Backup & Disaster Recovery through Excel data entry.</p>
+          </div>
+          <div class="col-md-4">
+            <img class="img-fluid" src="assets/first-slider.png">
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="row">
+          <div class="col-md-8">
+            <h3>Cost Monitoring</h3>
+            <p>Enables automated deployment of SAP Virtual Machines from standalone services to complex architecture
+              blueprints with Backup & Disaster Recovery through Excel data entry.</p>
+          </div>
+          <div class="col-md-4">
+            <img class="img-fluid" src="assets/second-slider.png">
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="row">
+          <div class="col-md-8">
+            <h3>Application Health Monitoring</h3>
+            <p>Enables automated deployment of SAP Virtual Machines from standalone services to complex architecture
+              blueprints with Backup & Disaster Recovery through Excel data entry.</p>
+          </div>
+          <div class="col-md-4">
+            <img class="img-fluid" src="assets/third-slider.png">
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
+
+
+<!-- Cards div-->
+<div *ngIf="this.togglecards" class="cards-div mt-2">
+  <div class="row gx-1">
+    <div class="col-md-4">
+      <div class="card p-2">
+        <div class="row">
+          <div class="col-md-3 text-center">
+            <img class="img-fluid pt-3" src="assets/card-icon1.png">
+          </div>
+          <div class="col-md-9">
+            <h6>Infrastructure Deployment and Management</h6>
+            <p>Lorem ipsum dolor sit amet, consectetur adipg elit ut aliquam, purus sit amet </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card p-2">
+        <div class="row">
+          <div class="col-md-3 text-center">
+            <img class="img-fluid pt-3" src="assets/card-icon2.png">
+          </div>
+          <div class="col-md-9">
+            <h6>Data Migration Security and Governance</h6>
+            <p>Lorem ipsum dolor sit amet, consectetur adipg elit ut aliquam, purus sit amet </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card p-2">
+        <div class="row">
+          <div class="col-md-3 text-center">
+            <img class="img-fluid pt-3" src="assets/card-icon3.png">
+          </div>
+          <div class="col-md-9">
+            <h6>Resource Scheduling and Monitoring</h6>
+            <p>Lorem ipsum dolor sit amet, consectetur adipg elit ut aliquam, purus sit amet </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row gx-1 mt-2">
+    <div class="col-md-4">
+      <div class="card p-2">
+        <div class="row">
+          <div class="col-md-3 text-center">
+            <img class="img-fluid pt-3" src="assets/card-icon4.png">
+          </div>
+          <div class="col-md-9">
+            <h6>Application Health Monitoring</h6>
+            <p>Lorem ipsum dolor sit amet, consectetur adipg elit ut aliquam, purus sit amet </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card p-2">
+        <div class="row">
+          <div class="col-md-3 text-center">
+            <img class="img-fluid pt-3" src="assets/card-icon5.png">
+          </div>
+          <div class="col-md-9">
+            <h6>Cost Monitoring and Optimization</h6>
+            <p>Lorem ipsum dolor sit amet, consectetur adipg elit ut aliquam, purus sit amet </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card p-2">
+        <div class="row">
+          <div class="col-md-3 text-center">
+            <img class="img-fluid pt-3" src="assets/card-icon6.png">
+          </div>
+          <div class="col-md-9">
+            <h6>Network Connectivity and Security</h6>
+            <p>Lorem ipsum dolor sit amet, consectetur adipg elit ut aliquam, purus sit amet </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row gx-1 mt-2">
+    <div class="col-md-4">
+      <div class="card p-2">
+        <div class="row">
+          <div class="col-md-3 text-center">
+            <img class="img-fluid pt-3" src="assets/card-icon7.png">
+          </div>
+          <div class="col-md-9">
+            <h6>Compliance and Governance</h6>
+            <p>Lorem ipsum dolor sit amet, consectetur adipg elit ut aliquam, purus sit amet </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card p-2">
+        <div class="row">
+          <div class="col-md-3 text-center">
+            <img class="img-fluid pt-3" src="assets/card-icon8.png">
+          </div>
+          <div class="col-md-9">
+            <h6>Resource Status Board</h6>
+            <p>Lorem ipsum dolor sit amet, consectetur adipg elit ut aliquam, purus sit amet </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card p-2">
+        <div class="row">
+          <div class="col-md-3 text-center">
+            <img class="img-fluid pt-3" src="assets/card-icon3.png">
+          </div>
+          <div class="col-md-9">
+            <h6>Azure Devops</h6>
+            <p>Lorem ipsum dolor sit amet, consectetur adipg elit ut aliquam, purus sit amet </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- show four cards whn toggle not clicked-->
+<div *ngIf="!this.togglecards" class="cards-div mt-2">
+  <div class="row gx-1">
+    <div class="col-md-3">
+      <div class="card p-2">
+        <div class="row">
+          <div class="col-md-3 text-center">
+            <img class="img-fluid pt-3" src="assets/card-icon1.png">
+          </div>
+          <div class="col-md-9">
+            <h6>Infrastructure Deployment and Management</h6>
+            <p>Lorem ipsum dolor sit amet, consectetur adipg elit ut aliquam, purus sit amet </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card p-2">
+        <div class="row">
+          <div class="col-md-3 text-center">
+            <img class="img-fluid pt-3" src="assets/card-icon2.png">
+          </div>
+          <div class="col-md-9">
+            <h6>Data Migration Security and Governance</h6>
+            <p>Lorem ipsum dolor sit amet, consectetur adipg elit ut aliquam, purus sit amet </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card p-2">
+        <div class="row">
+          <div class="col-md-3 text-center">
+            <img class="img-fluid pt-3" src="assets/card-icon3.png">
+          </div>
+          <div class="col-md-9">
+            <h6>Resource Scheduling and Monitoring</h6>
+            <p>Lorem ipsum dolor sit amet, consectetur adipg elit ut aliquam, purus sit amet </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card p-2">
+        <div class="row">
+          <div class="col-md-3 text-center">
+            <img class="img-fluid pt-3" src="assets/card-icon4.png">
+          </div>
+          <div class="col-md-9">
+            <h6>Application Health Monitoring</h6>
+            <p>Lorem ipsum dolor sit amet, consectetur adipg elit ut aliquam, purus sit amet </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row gx-1 mt-2">
+    <div class="col-md-3">
+      <div class="card p-2">
+        <div class="row">
+          <div class="col-md-3 text-center">
+            <img class="img-fluid pt-3" src="assets/card-icon5.png">
+          </div>
+          <div class="col-md-9">
+            <h6>Cost Monitoring and Optimization</h6>
+            <p>Lorem ipsum dolor sit amet, consectetur adipg elit ut aliquam, purus sit amet </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card p-2">
+        <div class="row">
+          <div class="col-md-3 text-center">
+            <img class="img-fluid pt-3" src="assets/card-icon6.png">
+          </div>
+          <div class="col-md-9">
+            <h6>Network Connectivity and Security</h6>
+            <p>Lorem ipsum dolor sit amet, consectetur adipg elit ut aliquam, purus sit amet </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card p-2">
+        <div class="row">
+          <div class="col-md-3 text-center">
+            <img class="img-fluid pt-3" src="assets/card-icon7.png">
+          </div>
+          <div class="col-md-9">
+            <h6>Compliance and Governance</h6>
+            <p>Lorem ipsum dolor sit amet, consectetur adipg elit ut aliquam, purus sit amet </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card p-2">
+        <div class="row">
+          <div class="col-md-3 text-center">
+            <img class="img-fluid pt-3" src="assets/card-icon8.png">
+          </div>
+          <div class="col-md-9">
+            <h6>Resource Status Board</h6>
+            <p>Lorem ipsum dolor sit amet, consectetur adipg elit ut aliquam, purus sit amet </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row gx-1 mt-2">
+    <div class="col-md-3">
+      <div class="card p-2">
+        <div class="row">
+          <div class="col-md-3 text-center">
+            <img class="img-fluid pt-3" src="assets/card-icon3.png">
+          </div>
+          <div class="col-md-9">
+            <h6>Azure Devops</h6>
+            <p>Lorem ipsum dolor sit amet, consectetur adipg elit ut aliquam, purus sit amet </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card p-2">
+        <div class="row">
+          <div class="col-md-3 text-center">
+            <img class="img-fluid pt-3" src="assets/card-icon1.png">
+          </div>
+          <div class="col-md-9">
+            <h6>Infrastructure Deployment and Management</h6>
+            <p>Lorem ipsum dolor sit amet, consectetur adipg elit ut aliquam, purus sit amet </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
